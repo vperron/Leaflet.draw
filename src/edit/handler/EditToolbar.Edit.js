@@ -148,12 +148,10 @@ L.EditToolbar.Edit = L.Handler.extend({
 		if (L.DomUtil.hasClass(icon, 'leaflet-edit-marker-selected')) {
 			L.DomUtil.removeClass(icon, 'leaflet-edit-marker-selected');
 			// Offset as the border will make the icon move.
-			this._offsetMarker(icon, -4);
 
 		} else {
 			L.DomUtil.addClass(icon, 'leaflet-edit-marker-selected');
 			// Offset as the border will make the icon move.
-			this._offsetMarker(icon, 4);
 		}
 
 		icon.style.display = '';
